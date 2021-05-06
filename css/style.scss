@@ -1,0 +1,39 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "partials/buttons";
+@import "partials/colors";
+@import "partials/layout";
+@import "partials/spacing";
+@import "partials/typography";
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: #1a1a1a;
+}
+
+svg, img {
+    display: block;
+    width: 100%;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+@import "partials/menu";
+@import "partials/swiper";
+@import "partials/icons";
+@import "partials/footer";
+@import "partials/animations";

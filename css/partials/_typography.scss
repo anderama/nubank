@@ -1,0 +1,81 @@
+// Project Typography
+
+@mixin typeface-Sora($size, $device: desktop) {
+    font-family: 'Sora', sans-serif;
+
+    //H1
+    @if $size == h1 and $device == desktop {
+        font-size: 6.4rem;
+        line-height: 100%;
+    } @else if $size == h1 and $device == mobile {
+        font-size: 3.6rem;
+        line-height: 120%;
+    }
+
+    //H2
+    @else if $size == h2 and $device == desktop {
+        font-size: 5.2rem;
+        line-height: 100%;
+    } @else if $size == h2 and $device == mobile {
+        font-size: 3.6rem;
+        line-height: 120%;
+    }
+
+    //H3
+    @else if $size == h3 and $device == desktop {
+        font-size: 3.6rem;
+        line-height: 120%;
+    } @else if $size == h3 and $device == mobile {
+        font-size: 2.4rem;
+        line-height: 120%;
+    }
+
+    //H4
+    @else if $size == h4 and $device == desktop {
+        font-size: 2.4rem;
+        line-height: 130%;
+    } @else if $size == h4 and $device == mobile {
+        font-size: 1.8rem;
+        line-height: 130%;
+    }
+
+    //H5
+    @else if $size == h5 and $device == desktop {
+        font-size: 1.8rem;
+        line-height: 140%;
+    } @else if $size == h5 and $device == mobile {
+        font-size: 1.6rem;
+        line-height: 150%;
+    }
+}
+
+@mixin typeface-SourceSansPro($size: p2, $device: desktop) {
+    font-family: 'Source Sans Pro', sans-serif;
+
+    //P1
+    @if $size == p1 and $device == desktop {
+        font-size: 2.4rem;
+        line-height: 130%;
+    } @else if $size == p1 and $device == mobile {
+        font-size: 1.8rem;
+        line-height: 130%;
+    }
+
+    //P2
+    @else if $size == p2 and $device == desktop {
+        font-size: 1.6rem;
+        line-height: 140%;
+    } @else if $size == p2 and $device == mobile {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+
+    //P3
+    @else if $size == p3 and $device == desktop {
+        font-size: 1.4rem;
+        line-height: 150%;
+    } @else if $size == p3 and $device == mobile {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+}
