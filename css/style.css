@@ -5,6 +5,125 @@
           box-sizing: border-box;
 }
 
+h1 {
+  color: #161617;
+  font-family: 'Sora', sans-serif;
+  font-size: 6.4rem;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 3.6rem;
+    line-height: 120%;
+  }
+}
+
+h2 {
+  color: #161617;
+  font-family: 'Sora', sans-serif;
+  font-size: 5.2rem;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 3.6rem;
+    line-height: 120%;
+  }
+}
+
+h3 {
+  color: #161617;
+  font-family: 'Sora', sans-serif;
+  font-size: 3.6rem;
+  line-height: 120%;
+}
+
+@media screen and (max-width: 960px) {
+  h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.4rem;
+    line-height: 120%;
+  }
+}
+
+h4 {
+  color: #161617;
+  font-family: 'Sora', sans-serif;
+  font-size: 2.4rem;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 960px) {
+  h4 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.8rem;
+    line-height: 130%;
+  }
+}
+
+h5 {
+  text-transform: uppercase;
+  background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: 'Sora', sans-serif;
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 960px) {
+  h5 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.6rem;
+    line-height: 150%;
+  }
+}
+
+p {
+  color: #666566;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 960px) {
+  p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
+.bold {
+  font-weight: bold;
+  color: #353436;
+}
+
+strong {
+  color: #161617;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 960px) {
+  strong {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
@@ -15,7 +134,7 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
-  background-color: #1a1a1a;
+  background-color: #EDEAEF;
 }
 
 svg, img {
