@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-@import "partials/buttons";
 @import "partials/colors";
 @import "partials/layout";
-@import "partials/spacing";
 @import "partials/typography";
+@import "partials/buttons";
+@import "partials/spacing";
 
 html {
     scroll-behavior: smooth;

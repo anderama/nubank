@@ -146,7 +146,7 @@ p {
     color: $black-light;
 }
 
-strong {
+.strong {
     color: $black-dark;
     @include typeface-SourceSansPro(p2, desktop);
     @include responsive(s) {

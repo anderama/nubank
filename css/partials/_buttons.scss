@@ -1,0 +1,30 @@
+a {
+    @include typeface-SourceSansPro(p2, desktop);
+    text-decoration: none;
+    color: $black;
+    transition: .5s ease;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.btn {
+    background: $gradient-1;
+    color: $white-light;
+    transition: .4s ease;
+    border-radius: 16px;
+    padding: 12px 32px;
+    box-shadow: 0px 43px 60px rgba(169, 80, 196, 0.14), 
+    0px 12.9632px 18.0882px rgba(169, 80, 196, 0.0912224), 
+    0px 5.38427px 7.51293px rgba(169, 80, 196, 0.07), 
+    0px 1.94738px 2.71728px rgba(169, 80, 196, 0.0487776);
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0px -2px 60px rgba(169, 80, 196, 0.71), 
+        0px -0.602941px 18.0882px rgba(169, 80, 196, 0.462628), 
+        0px -0.250431px 7.51293px rgba(169, 80, 196, 0.355), 
+        0px -0.090576px 2.71728px rgba(169, 80, 196, 0.247372);
+    }
+}
