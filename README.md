@@ -1,6 +1,6 @@
 # Nubank Redesign 💜
 
-![Nubank](D:\Meus Documentos\Área de Trabalho\Cover.png)
+![Nubank](https://github.com/anderama/nubank/blob/main/img/Cover.png)
 
 
 
