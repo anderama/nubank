@@ -34,6 +34,8 @@ header {
     width: 48px;
     height: 48px;
 
+    z-index: 800;
+
     background-color: red;
 
     display: flex;
@@ -154,7 +156,8 @@ header {
 
     &:hover {
         &::after {
-            width: 100%;
+            width: 80%;
+            left: 16px;
         }
     }
 }
@@ -162,17 +165,150 @@ header {
 // Mobile
 
 .navbar-mobile {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 10px 24px;
+
     display: none;
 
     @include responsive(s) {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.bx {
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .7s ease;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        transition: .7s ease;
+
+        top: 40%;
+        left: 15%;
+        width: 70%;
+        height: 2px;
+        background-color: $purple;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        transition: .7s ease;
+
+        top: 64%;
+        left: 15%;
+        width: 70%;
+        height: 2px;
+        background-color: $purple;
+    }
+}
+
+.active-bx {
+    width: 36px;
+    height: 36px;
+
+    position: relative;
+    cursor: pointer;
+    z-index: 800;
+    transition: .7s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        top: 50%;
+        left: 15%;
+
+        transform: rotate(-135deg);
+
+        width: 70%;
+        height: 2px;
+        background-color: $purple;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+
+        top: 50%;
+        left: 15%;
+
+        transform: rotate(315deg);
+
+        width: 70%;
+        height: 2px;
+        background-color: $purple;
     }
 }
 
 .menu-mobile {
-    display: none;
+    width: 100vw;
+    height: 100vh;
 
-    @include responsive(s) {
-        display: block;
+    background-color: $white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: .7s ease;
+
+    transform: translate3d(0, -100px, 0);
+}
+
+.active-menu-mobile {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.nav-list-mobile {
+    max-width: $container-xl;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link-mobile {
+    display: inline-block;
+    @include typeface-Sora(h3, desktop);
+    color: $gray-2;
+
+    padding: 16px 24px;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 90%;
+        left: 16px;
+
+        transition: 1s ease;
+
+        width: 0;
+        height: 2px;
+
+        background-color: $purple-2;
+    }
+
+    &:hover {
+        color: $purple;
+
+        &::after {
+            width: 100%;
+        }
     }
 }
