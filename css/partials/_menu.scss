@@ -277,6 +277,23 @@ header {
 
     display: flex;
     flex-direction: column;
+
+    svg {
+        width: 36px;
+        height: 36px;
+        
+
+        path {
+            stroke: $gray-7;
+            transition: .7s ease;
+        }
+
+        &:hover {
+            path {
+                stroke: $purple;
+            }
+        }
+    }
 }
 
 .nav-link-mobile {

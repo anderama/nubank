@@ -44,3 +44,105 @@ $container-s: 540px;
         }
     }
 }
+
+.container {
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 96px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+
+    @include responsive(s){
+        flex-direction: column;
+        padding: 32px 18px;
+    }
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    justify-content: column;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1 1 360px;
+}
+
+.flex-item-2 {
+    flex: 2 1 360px;
+}
+
+.flex-item-3 {
+    flex: 3 1 360px;
+}
+
+.flex-item-4 {
+    flex: 4 1 360px;
+}
+
+.flex-item-5 {
+    flex: 5 1 360px;
+}
+
+.flex-item-auto {
+    flex: 2 1 auto;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.hero {
+    height: 90vh;
+
+    @include responsive(s){
+        height: auto;
+    }
+}
