@@ -213,6 +213,39 @@
   }
 }
 
+.list-item {
+  list-style: none;
+  position: relative;
+  padding: 8px 8px 8px 72px;
+  margin-bottom: 48px;
+}
+
+.list-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -8px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 10px;
+}
+
+strong {
+  color: #232224;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 960px) {
+  strong {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+}
+
 h1 {
   color: #161617;
   font-family: 'Sora', sans-serif;
@@ -362,6 +395,41 @@ a:hover {
           transform: scale(1.02);
   -webkit-box-shadow: 0px -2px 60px rgba(169, 80, 196, 0.71), 0px -0.60294px 18.0882px rgba(169, 80, 196, 0.462628), 0px -0.25043px 7.51293px rgba(169, 80, 196, 0.355), 0px -0.09058px 2.71728px rgba(169, 80, 196, 0.247372);
           box-shadow: 0px -2px 60px rgba(169, 80, 196, 0.71), 0px -0.60294px 18.0882px rgba(169, 80, 196, 0.462628), 0px -0.25043px 7.51293px rgba(169, 80, 196, 0.355), 0px -0.09058px 2.71728px rgba(169, 80, 196, 0.247372);
+}
+
+.link {
+  display: inline-block;
+  color: #82269E;
+  background-image: url("../svg/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  font-size: 1.8rem;
+  padding: 16px 16px 16px 40px;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  -webkit-transition: .7s ease;
+  transition: .7s ease;
+  top: 75%;
+  left: 64px;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #82269E;
+}
+
+.link:hover {
+  opacity: 0.8;
+  padding-left: 64px;
+  background-position: 8px 50%;
+}
+
+.link:hover::after {
+  width: 70%;
 }
 
 .m-1 {
@@ -688,6 +756,7 @@ svg, img {
 
 header {
   width: 100%;
+  height: 72px;
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1050,6 +1119,55 @@ header {
 .dropshadow {
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-mobile::after {
+  background-image: url("../svg/icon-mobile.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-mobile:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-card::after {
+  background-image: url("../svg/icon-card.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-card:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-check::after {
+  background-image: url("../svg/icon-check.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  width: 42px;
+  height: 42px;
+  top: 16px;
+  left: 8px;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-check:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .div-card {

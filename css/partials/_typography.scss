@@ -78,6 +78,24 @@
         font-size: 1.4rem;
         line-height: 150%;
     }
+
+    // Strong
+    @else if $size == strong and $device == desktop {
+        font-size: 1.6rem;
+        line-height: 140%;
+    } @else if $size == strong and $device == mobile {
+        font-size: 1.4rem;
+        line-height: 150%;
+    }
+}
+
+strong {
+    color: $black;
+    @include typeface-SourceSansPro(strong, desktop);
+
+    @include responsive(s) {
+        @include typeface-SourceSansPro(strong, mobile);
+    }
 }
 
 h1 {
