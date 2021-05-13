@@ -97,3 +97,53 @@ $height-card: 0.64 * $width-card;
         transform: translate3d(10px, -40px, 0);
     }
 }
+
+// Section People
+
+.people1 {
+    opacity: 0;
+    animation: people 10s ease 0s infinite;
+}
+
+.people2 {
+    opacity: 0;
+    animation: people 10s ease 5s infinite;
+}
+
+.people3 {
+    opacity: 0;
+    animation: people 10s ease 2s infinite;
+}
+
+.people4 {
+    opacity: 0;
+    animation: people 10s ease 7s infinite;
+}
+
+.people5 {
+    opacity: 0;
+    animation: people 10s ease 3s infinite;
+}
+
+.people6 {
+    opacity: 0;
+    animation: people 10s ease 8s infinite;
+}
+
+#people1 {
+    @include responsive(s){
+        display: none;
+    }
+}
+
+@keyframes people {
+    0% {
+        opacity: 0;
+    }
+    20%,50% {
+        opacity: 1;
+    }
+    70%,100% {
+        opacity: 0;
+    }
+}

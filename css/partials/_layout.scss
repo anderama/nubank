@@ -213,3 +213,52 @@ $container-s: 540px;
         border-radius: 10px;
     }
 }
+
+// Section Best
+
+.best {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 50px;
+
+    background-color: $white;
+
+    @include responsive(s){
+        flex-direction: column;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        top: 0;
+        left: 50%;
+
+        transform: translate(-50%, 0);
+
+        width: 124px;
+        height: 32px;
+        background-image: url('../svg/entail.svg');
+        background-repeat: no-repeat;
+    }
+}
+
+.best-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 16px;
+    padding: 8px;
+
+    @include responsive(s){
+        justify-content: center;
+        align-items: center;
+    }
+}
