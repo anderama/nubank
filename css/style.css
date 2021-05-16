@@ -1267,6 +1267,21 @@ header {
           transform: scale(1.05);
 }
 
+.bg-icon-contactless::after {
+  background-image: url("../svg/icon-contactless.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-contactless:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .icon {
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
@@ -1535,6 +1550,33 @@ header {
   100% {
     -webkit-transform: translate3d(10px, -40px, 0);
             transform: translate3d(10px, -40px, 0);
+  }
+}
+
+.fignu-card {
+  -webkit-animation: fignu-card 3s ease infinite alternate;
+          animation: fignu-card 3s ease infinite alternate;
+}
+
+@-webkit-keyframes fignu-card {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -35px, 0);
+            transform: translate3d(0, -35px, 0);
+  }
+}
+
+@keyframes fignu-card {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -35px, 0);
+            transform: translate3d(0, -35px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -185,3 +185,16 @@ $height-card: 0.64 * $width-card;
         transform: translate3d(10px, -40px, 0);
     }
 }
+
+.fignu-card {
+    animation: fignu-card 3s ease infinite alternate;
+}
+
+@keyframes fignu-card {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, -35px, 0);
+    }
+}
