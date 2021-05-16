@@ -147,3 +147,41 @@ $height-card: 0.64 * $width-card;
         opacity: 0;
     }
 }
+
+// Section Phone
+.div-phone {
+    position: relative;
+}
+
+.icon-cash2 {
+    position: absolute;
+    top: 120px;
+    left: 120px;
+
+    animation: icons-phone 3s ease 0s infinite alternate;
+}
+
+.icon-check2 {
+    position: absolute;
+    top: 55%;
+    left: 130px;
+
+    animation: icons-phone 3s ease 1.5s infinite alternate;
+}
+
+.icon-safe {
+    position: absolute;
+    top: 25%;
+    left: -140px;
+
+    animation: icons-phone 3s ease 2s infinite alternate;
+}
+
+@keyframes icons-phone {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(10px, -40px, 0);
+    }
+}

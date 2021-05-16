@@ -496,7 +496,7 @@ a:hover {
 }
 
 .link:hover::after {
-  width: 70%;
+  width: 74%;
 }
 
 .m-1 {
@@ -1237,6 +1237,36 @@ header {
           transform: scale(1.05);
 }
 
+.bg-icon-time::after {
+  background-image: url("../svg/icon-time.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-time:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../svg/icon-config.svg");
+  background-size: cover;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+          filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+.bg-icon-config:hover::after {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .icon {
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
@@ -1455,6 +1485,56 @@ header {
   }
   70%, 100% {
     opacity: 0;
+  }
+}
+
+.div-phone {
+  position: relative;
+}
+
+.icon-cash2 {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  -webkit-animation: icons-phone 3s ease 0s infinite alternate;
+          animation: icons-phone 3s ease 0s infinite alternate;
+}
+
+.icon-check2 {
+  position: absolute;
+  top: 55%;
+  left: 130px;
+  -webkit-animation: icons-phone 3s ease 1.5s infinite alternate;
+          animation: icons-phone 3s ease 1.5s infinite alternate;
+}
+
+.icon-safe {
+  position: absolute;
+  top: 25%;
+  left: -140px;
+  -webkit-animation: icons-phone 3s ease 2s infinite alternate;
+          animation: icons-phone 3s ease 2s infinite alternate;
+}
+
+@-webkit-keyframes icons-phone {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(10px, -40px, 0);
+            transform: translate3d(10px, -40px, 0);
+  }
+}
+
+@keyframes icons-phone {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(10px, -40px, 0);
+            transform: translate3d(10px, -40px, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */
