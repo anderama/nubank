@@ -312,7 +312,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-bottom: 20%;
 }
 
 .bg-invite {
@@ -331,6 +332,97 @@
   .svg-bg-invite {
     width: 100%;
   }
+}
+
+.fignu5-ball1 {
+  -webkit-animation: bg-invite 3s ease 0s infinite alternate;
+          animation: bg-invite 3s ease 0s infinite alternate;
+}
+
+.fignu5-ball2 {
+  -webkit-animation: bg-invite 3s ease 0.5s infinite alternate;
+          animation: bg-invite 3s ease 0.5s infinite alternate;
+}
+
+.fignu5-ball3 {
+  -webkit-animation: bg-invite 3s ease 1s infinite alternate;
+          animation: bg-invite 3s ease 1s infinite alternate;
+}
+
+.fignu5-ball4 {
+  -webkit-animation: bg-invite 3s ease 1.5s infinite alternate;
+          animation: bg-invite 3s ease 1.5s infinite alternate;
+}
+
+@-webkit-keyframes bg-invite {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+}
+
+@keyframes bg-invite {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+}
+
+footer {
+  background: linear-gradient(220.94deg, #A950C4 14.43%, #82269E 85.28%);
+  display: block;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-flex-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-footer {
+  color: #F3F0F5;
+}
+
+.instagram {
+  color: #F3F0F5;
 }
 
 strong {

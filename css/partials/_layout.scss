@@ -271,7 +271,8 @@ $container-s: 540px;
     align-items: center;
     flex-direction: column;
 
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 20%;
 }
 
 .bg-invite {
@@ -289,4 +290,62 @@ $container-s: 540px;
     @include responsive(xl){
         width: 100%;
     }
+}
+
+.fignu5-ball1 {
+    animation: bg-invite 3s ease 0s infinite alternate;
+}
+
+.fignu5-ball2 {
+    animation: bg-invite 3s ease 0.5s infinite alternate;
+}
+
+.fignu5-ball3 {
+    animation: bg-invite 3s ease 1s infinite alternate;
+}
+
+.fignu5-ball4 {
+    animation: bg-invite 3s ease 1.5s infinite alternate;
+}
+
+@keyframes bg-invite {
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100% {
+        transform: translate3d(0,30px,0);
+    }
+}
+
+// Footer
+
+footer {
+    background: $gradient-1;
+    display: block;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-flex-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-flex-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.p-footer {
+    color: $white;
+}
+
+.instagram {
+    color: $white;
 }
