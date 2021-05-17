@@ -1446,6 +1446,14 @@ header {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
+@media screen and (max-width: 960px) {
+  .bg-icon-mobile::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
+}
+
 .bg-icon-mobile:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1459,6 +1467,14 @@ header {
   cursor: pointer;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+@media screen and (max-width: 960px) {
+  .bg-icon-card::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
 }
 
 .bg-icon-card:hover::after {
@@ -1480,6 +1496,14 @@ header {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
+@media screen and (max-width: 960px) {
+  .bg-icon-check::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
+}
+
 .bg-icon-check:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1493,6 +1517,14 @@ header {
   cursor: pointer;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+@media screen and (max-width: 960px) {
+  .bg-icon-time::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
 }
 
 .bg-icon-time:hover::after {
@@ -1510,6 +1542,14 @@ header {
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
 
+@media screen and (max-width: 960px) {
+  .bg-icon-config::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
+}
+
 .bg-icon-config:hover::after {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -1523,6 +1563,14 @@ header {
   cursor: pointer;
   -webkit-filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
           filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+
+@media screen and (max-width: 960px) {
+  .bg-icon-contactless::after {
+    width: 48px;
+    height: 48px;
+    margin-top: 16px;
+  }
 }
 
 .bg-icon-contactless:hover::after {

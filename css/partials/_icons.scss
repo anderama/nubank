@@ -4,6 +4,12 @@
 
 .bg-icon-mobile {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+
         background-image: url('../svg/icon-mobile.svg');
         background-size: cover;
         transition: .5s ease;
@@ -22,6 +28,12 @@
 
 .bg-icon-card {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+
         background-image: url('../svg/icon-card.svg');
         background-size: cover;
         transition: .5s ease;
@@ -39,6 +51,12 @@
 }
 .bg-icon-check {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+
         background-image: url('../svg/icon-check.svg');
         background-size: cover;
         transition: .5s ease;
@@ -63,6 +81,12 @@
 
 .bg-icon-time {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+
         background-image: url('../svg/icon-time.svg');
         background-size: cover;
         transition: .5s ease;
@@ -81,6 +105,12 @@
 
 .bg-icon-config {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+
         background-image: url('../svg/icon-config.svg');
         background-size: cover;
         transition: .5s ease;
@@ -99,6 +129,12 @@
 
 .bg-icon-contactless {
     &::after {
+        @include responsive(s){
+            width: 48px;
+            height: 48px;
+            margin-top: 16px;
+        }
+        
         background-image: url('../svg/icon-contactless.svg');
         background-size: cover;
         transition: .5s ease;
