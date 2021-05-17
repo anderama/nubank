@@ -1763,6 +1763,15 @@ header {
           animation: icons-phone 3s ease 0s infinite alternate;
 }
 
+@media screen and (max-width: 960px) {
+  .icon-cash2 {
+    width: 48px;
+    height: 48px;
+    top: 220px;
+    left: 130px;
+  }
+}
+
 .icon-check2 {
   position: absolute;
   top: 55%;
@@ -1771,12 +1780,30 @@ header {
           animation: icons-phone 3s ease 1.5s infinite alternate;
 }
 
+@media screen and (max-width: 960px) {
+  .icon-check2 {
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    left: 130px;
+  }
+}
+
 .icon-safe {
   position: absolute;
   top: 25%;
   left: -140px;
   -webkit-animation: icons-phone 3s ease 2s infinite alternate;
           animation: icons-phone 3s ease 2s infinite alternate;
+}
+
+@media screen and (max-width: 960px) {
+  .icon-safe {
+    width: 48px;
+    height: 48px;
+    top: 36%;
+    left: -8px;
+  }
 }
 
 @-webkit-keyframes icons-phone {

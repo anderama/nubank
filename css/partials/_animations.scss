@@ -159,6 +159,14 @@ $height-card: 0.64 * $width-card;
     left: 120px;
 
     animation: icons-phone 3s ease 0s infinite alternate;
+
+    @include responsive(s){
+        width: 48px;
+        height: 48px;
+
+        top: 220px;
+        left: 130px;
+    }
 }
 
 .icon-check2 {
@@ -167,6 +175,14 @@ $height-card: 0.64 * $width-card;
     left: 130px;
 
     animation: icons-phone 3s ease 1.5s infinite alternate;
+
+    @include responsive(s){
+        width: 48px;
+        height: 48px;
+
+        top: 50%;
+        left: 130px;
+    }
 }
 
 .icon-safe {
@@ -175,6 +191,14 @@ $height-card: 0.64 * $width-card;
     left: -140px;
 
     animation: icons-phone 3s ease 2s infinite alternate;
+
+    @include responsive(s){
+        width: 48px;
+        height: 48px;
+
+        top: 36%;
+        left: -8px;
+    }
 }
 
 @keyframes icons-phone {
