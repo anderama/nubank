@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="icon" type="image/png" sizes="32x32" href="img/icon-browser.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
@@ -237,8 +238,86 @@
         </div>
     </section>
 
+    <!--------------SECTION SLIDER-------------->
+    <section class="box">
+        <h5 class="ml-4">Depoimentos</h5>
+        <h2 class="ml-4">Todos amam o roxinho</h2>
+    </section>
+    <section class="container-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1 my-1"></div>
+                    <h4 class="my-1">Jorge Silva</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2 my-1"></div>
+                    <h4 class="my-1">Anna Keller</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3 my-1"></div>
+                    <h4 class="my-1">Gabriella Shuzz</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4 my-1"></div>
+                    <h4 class="my-1">Lia Vieira</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5 my-1"></div>
+                    <h4 class="my-1">Théo Gomes</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-6 my-1"></div>
+                    <h4 class="my-1">Marcela Sousa</h4>
+                    <p class="my-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Ipsa magni illum quaerat nesciunt. Non ratione, ut cumque fugiat, 
+                        quae illum magni ipsum nesciunt accusantium quasi exercitationem 
+                        voluptatibus vero hic obcaecati.</p>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
     <!--------------JS-------------->
     <script src="js/app.js"></script>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+            grabCursos: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
