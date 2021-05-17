@@ -115,23 +115,23 @@ $container-s: 540px;
     flex: 2 1 auto;
 }
 
-.w-auto {
+.width-auto {
     width: auto;
 }
 
-.w-100 {
+.width-100 {
     width: 100%;
 }
 
-.w-75 {
+.width-75 {
     width: 75%;
 }
 
-.w-50 {
+.width-50 {
     width: 50%;
 }
 
-.w-25 {
+.width-25 {
     width: 25%;
 }
 
@@ -260,5 +260,33 @@ $container-s: 540px;
     @include responsive(s){
         justify-content: center;
         align-items: center;
+    }
+}
+
+// BG Invite
+
+.nuconta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 15%;
+}
+
+.bg-invite {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    position: absolute;
+    z-index: -1;
+}
+
+.svg-bg-invite {
+    width: 150%;
+
+    @include responsive(xl){
+        width: 100%;
     }
 }

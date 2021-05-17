@@ -65,3 +65,10 @@ a {
         }
     }
 }
+
+.button {
+    transition: .4s ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
