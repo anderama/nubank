@@ -287,6 +287,10 @@
   padding: 8px;
 }
 
+.best-item p {
+  text-align: center;
+}
+
 @media screen and (max-width: 960px) {
   .best-item {
     -webkit-box-pack: center;

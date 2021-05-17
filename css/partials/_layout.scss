@@ -257,6 +257,10 @@ $container-s: 540px;
     margin: 16px;
     padding: 8px;
 
+    p {
+        text-align: center;
+    }
+
     @include responsive(s){
         justify-content: center;
         align-items: center;
