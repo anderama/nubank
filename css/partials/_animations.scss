@@ -160,12 +160,12 @@ $height-card: 0.64 * $width-card;
 
     animation: icons-phone 3s ease 0s infinite alternate;
 
-    @include responsive(s){
+    @include responsive(xs){
         width: 48px;
         height: 48px;
 
         top: 220px;
-        left: 130px;
+        left: 150px;
     }
 }
 
@@ -176,12 +176,12 @@ $height-card: 0.64 * $width-card;
 
     animation: icons-phone 3s ease 1.5s infinite alternate;
 
-    @include responsive(s){
+    @include responsive(xs){
         width: 48px;
         height: 48px;
 
         top: 50%;
-        left: 130px;
+        left: 150px;
     }
 }
 
@@ -192,7 +192,7 @@ $height-card: 0.64 * $width-card;
 
     animation: icons-phone 3s ease 2s infinite alternate;
 
-    @include responsive(s){
+    @include responsive(xs){
         width: 48px;
         height: 48px;
 

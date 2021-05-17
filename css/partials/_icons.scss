@@ -4,7 +4,7 @@
 
 .bg-icon-mobile {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
@@ -28,7 +28,7 @@
 
 .bg-icon-card {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
@@ -51,7 +51,7 @@
 }
 .bg-icon-check {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
@@ -81,7 +81,7 @@
 
 .bg-icon-time {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
@@ -105,7 +105,7 @@
 
 .bg-icon-config {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
@@ -129,7 +129,7 @@
 
 .bg-icon-contactless {
     &::after {
-        @include responsive(s){
+        @include responsive(xs){
             width: 48px;
             height: 48px;
             margin-top: 16px;
