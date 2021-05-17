@@ -67,8 +67,18 @@ a {
 }
 
 .button {
+    @include responsive(s){
+        width: 160px;
+        height: 64px;
+    }
     transition: .4s ease;
     &:hover {
         transform: scale(1.05);
+    }
+}
+
+.button-2 {
+    @include responsive(s){
+        margin-right: 32px;
     }
 }

@@ -302,6 +302,19 @@
   }
 }
 
+.fignu4 {
+  width: 278px;
+  height: 278px;
+}
+
+@media screen and (max-width: 960px) {
+  .depositions {
+    margin-right: 42px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
 .nuconta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,9 +648,22 @@ a:hover {
   transition: .4s ease;
 }
 
+@media screen and (max-width: 960px) {
+  .button {
+    width: 160px;
+    height: 64px;
+  }
+}
+
 .button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+@media screen and (max-width: 960px) {
+  .button-2 {
+    margin-right: 32px;
+  }
 }
 
 .m-1 {
